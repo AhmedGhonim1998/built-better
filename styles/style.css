@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --pirmary_color: #ffb607;
+  --pirmary_color_overlay: #ffb50763;
+  --secondary_color: #ffffff;
+  --button_txt_color: #989696;
+  --footer_color: #313131;
+  --helping_color: #070201;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/*******************************************global**************************************/
+.furniture {
+  background-image: url(../images/banner-bg.png);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.nav {
+  flex-wrap: nowrap;
+}
+.btn {
+  background-color: none;
+  border: none;
+  color: var(--helping_color);
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: var(--helping_color);
+  color: var(--secondary_color);
+}
+.call_us_login > .nav-link {
+  margin-top: 2%;
+}
+a {
+  text-transform: capitalize;
+  color: var(--helping_color) !important;
+}
+h1 {
+  font-size: 3.5rem;
+}
+.btn-primary {
+  background-color: var(--pirmary_color);
+  /* height: 50px; */
+  /* margin-left: 45%; */
+  margin-top: 22%;
+}
+.about_button {
+  background-color: var(--helping_color);
+  color: white;
+}
+.about_us {
+  background-color: var(--pirmary_color);
+}
+.card {
+  border: none;
+}
+.about_right img {
+  width: 90%;
+}
+.about_left {
+  margin-right: 4%;
+}
+h6 {
+  color: var(--pirmary_color);
+  font-weight: 800;
+}
+.card {
+  width: 40% !important;
+}
+.who_are_you {
+  background-image: url(../images/bg-1.png);
+  min-height: 70vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.card-title {
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.cleints_card {
+  width: 60% !important;
+  border: 1px solid var(--helping_color);
+  padding: 2%;
+  border-radius: 0px;
+}
+
+.image_overlay {
+  left: 28%;
+  top: 91%;
+  z-index: 1;
+}
+.contact {
+  background-image: url(../images/contact-bg.png);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.form-control {
+  /* width: 40%; */
+}
+.txt_area {
+  height: 150px;
+}
+.contact_us_content img {
+  width: 35%;
+  margin-top: 3% !important;
+}
+.left_contact_us {
+  width: 40%;
+  margin-right: 2%;
+}
+.btn-secondary {
+  background-color: transparent;
+  border-radius: 0%;
+  color: var(--button_txt_color);
+  border: 1px solid var(--secondary_color);
+  width: 100px;
+  font-weight: 600;
+}
+footer {
+  background-color: var(--footer_color);
+  min-height: 70vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+footer h2 {
+  font-weight: 600;
+}
+.information p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer_data {
+  margin-left: 6%;
+  width: 65%;
+}
+.footer_content {
+  padding-top: 5%;
+}
+.design_togeter h2 {
+  margin-bottom: 15%;
+}
+.footer_content h5 {
+  margin-bottom: 10%;
+}
+.btn-success {
+  background-color: transparent;
+  color: var(--secondary_color);
+  border-bottom: 1px solid var(--secondary_color);
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  font-weight: 600;
+}
+.footer_group input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary_color);
+  border-radius: 0;
+}
+.footer_group input::placeholder {
+  color: gray;
+}
+.footer_group {
+  width: 30%;
+  margin-right: 8%;
+}
+.footer_water_mark {
+  background-color: white;
+  padding-top: 2%;
+  margin-top: 6%;
+}
+
+@media (max-width: 575px) {
+  :root {
+    font-size: 12px;
+  }
+  .responsive {
+    flex-direction: column;
+    align-items: center;
+  }
+  .who_are_you_content p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .card-img-overlay h5 {
+    font-size: 1rem;
+  }
+  .our_projects_images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cleints_card .card-body {
+    padding-top: 6% !important;
+  }
+  .footer_group{
+    width: 300px;
+  }
+}
+@media (max-width: 875px) {
+  :root {
+    font-size: 15px;
+  }
+  .who_are_you_content p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .card-img-overlay h5 {
+    font-size: 1rem;
+  }
+  .buttom_our_furnitures .card {
+    width: 70% !important;
+    margin-bottom: 5%;
+  }
+  .footer_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_content p {
+    width: 60%;
+  }
+  .footer_content h2 {
+    margin-bottom: 5%;
+  }
+  .footer_h5 {
+    margin-bottom: 5% !important;
+  }
+  .footer_data{
+    margin-top: 3%;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
+    font-size: 15px !important;
+  }
+  .footer_content p {
+    font-size: 12px;
+    width: 100%;
+  }
+  .footer_content h2 {
+    font-size: 1.5rem;
+  }
+  .footer_h5 {
+    font-size: 15px !important;
+  }
+  .who_are_you p {
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+  }
+  .cleints_card .card-body {
+    margin-left: 3%;
+  }
+  .contact_us_content {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  .left_contact_us {
+    width: 70%;
+    text-align: center;
+  }
+  .contact_us_content img {
+    width: 58%;
+  }
+}
